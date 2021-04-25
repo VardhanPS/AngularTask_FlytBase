@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+#app-Header {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#app-Header p {
+    margin: 0;
+}
+
+#app-title {
+    height: 7vh;
+    background-color:#047ccb;
+    /* font-family: 'PT Sans', sans-serif; */
+    color: aliceblue;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-navToolBar {
+    height: 5vh;
+    background: #008cfb29;
+}
+
+#app-body {
+    height: 88vh;
+    width: 100%;
+    display: inline-flex;
+    background: #008cfb29;
+}
+
+.movable-box {
+    height: 10vh;
+    width: 10vh;
+    background: #047ccb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 10px solid aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+.box-counter {
+    font-size: medium;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.selected-box {
+    border : 10px solid #000000a8;
+}

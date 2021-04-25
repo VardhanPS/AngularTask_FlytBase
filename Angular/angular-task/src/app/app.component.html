@@ -1,0 +1,23 @@
+<!-- <input type="text" [(ngModel)] = "name">
+<p>{{ name }}</p>
+-->
+<div id = "app-Header">
+  <div id = "app-title">
+    <p>Movable Box Generator</p>
+  </div>
+  <div id = "app-navToolBar">
+    <div id="app-checkbox-label"><p >{{keyBoardControlTxt}} KeyBoard Control</p></div>
+    <label class="switch">
+      <input type="checkbox" checked (click)="toggleControl()" id = "app-toggle-checkBox">
+      <span class="slider round"></span>
+    </label>
+    <button (click)="addBox()" class = "app-Btn" id = "app-add-btn">Add Box</button>
+    <button (click)="deleteBox()" class = "app-Btn" id = "app-delete-btn">Delete Box</button>
+  </div>
+</div>
+<div id = "app-body">
+  <div id = "app-display-wrapper">
+    <div id = "app-box-container">
+    </div>
+  </div>
+</div>
