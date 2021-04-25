@@ -7,4 +7,4 @@ const person = {
     role: Role.ADMIN
 };
 
-console.log('ADM' == Role['ADMIN']); 
+console.log('ADM' == Role['ADMIN'])
