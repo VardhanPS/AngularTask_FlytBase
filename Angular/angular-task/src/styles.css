@@ -48,6 +48,10 @@ body {
     position: relative;
 }
 
+.movable-box p {
+    margin: auto;
+}
+
 .box-counter {
     font-size: medium;
     font-family: 'PT Sans', sans-serif;
