@@ -76,25 +76,25 @@ export class AppComponent {
       let borderBoundingRec = this.elem.nativeElement.querySelector('#app-box-container').getBoundingClientRect();
       const boundingRecBorder = parseInt(window.getComputedStyle(this.elem.nativeElement.querySelector('#app-box-container')).border);
       if ( event.keyCode === 65 || event.keyCode === 37 ) { //key A or arrow left
-        if (Math.abs(parseInt((borderBoundingRec.left - boxBoundingRec.left).toFixed())) != boundingRecBorder) {
+        if (Math.abs(parseInt((borderBoundingRec.left - boxBoundingRec.left).toFixed())) > boundingRecBorder) {
           this.selectedBox.translateX -= 10;
         }
       }
 
       if ( event.keyCode === 68 || event.keyCode === 39 ) { //key D or arrow right
-        if (Math.abs(parseInt((borderBoundingRec.right - boxBoundingRec.right).toFixed())) != boundingRecBorder) {
+        if (Math.abs(parseInt((borderBoundingRec.right - boxBoundingRec.right).toFixed())) > boundingRecBorder) {
           this.selectedBox.translateX += 10;
         }
       }
 
       if ( event.keyCode === 83 || event.keyCode === 40 ) { //key S or arrow down
-        if (Math.abs(parseInt((borderBoundingRec.bottom - boxBoundingRec.bottom).toFixed())) != boundingRecBorder) {
+        if (Math.abs(parseInt((borderBoundingRec.bottom - boxBoundingRec.bottom).toFixed())) > boundingRecBorder) {
           this.selectedBox.translateY += 10;
         }
       }
 
       if ( event.keyCode === 87 || event.keyCode === 38 ) { //key W or arrow up
-        if (Math.abs(parseInt((borderBoundingRec.top - boxBoundingRec.top).toFixed())) != boundingRecBorder) {
+        if (Math.abs(parseInt((borderBoundingRec.top - boxBoundingRec.top).toFixed())) > boundingRecBorder) {
           this.selectedBox.translateY -= 10;
         }
       }
